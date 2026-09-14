@@ -1,4 +1,4 @@
-# ΓÜí Online C Compiler Suite & Interactive Cloud IDE
+# ⚡ Online C Compiler Suite & Interactive Cloud IDE
 
 [![Online IDE](https://img.shields.io/badge/Live%20IDE-onlineccompiler.com-blue?style=for-the-badge&logo=c)](https://onlineccompiler.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
@@ -8,22 +8,43 @@
 
 An enterprise-grade, high-performance web-based C compilation and debugging environment. Compile, execute, and inspect C programs in real time directly within any modern web browser without local toolchain installation.
 
-≡ƒæë **Launch Online Compiler**: [https://onlineccompiler.com/](https://onlineccompiler.com/)
+👉 **Launch Online Compiler**: [https://onlineccompiler.com/](https://onlineccompiler.com/)
 
 ---
 
-## ≡ƒîì Multilingual Portals & Regional Developer Endpoints
+## 📖 Systems Programming Guides & Troubleshooting Reference
+
+Comprehensive technical documentation, compiler diagnostic fixes, and memory management tutorials:
+
+### 🛠️ Compiler Architecture & Diagnostics
+* **[Clang vs GCC: Performance, Diagnostic Quality & Optimization](https://onlineccompiler.com/learn/clang-vs-gcc)** — Architectural comparison of Clang/LLVM vs GCC compilation passes, compilation speeds, and warning precision.
+* **[GCC vs G++: Compiler Drivers and Runtime Linking](https://onlineccompiler.com/learn/gcc-vs-gpp)** — Analysis of compiler frontend drivers, automatic C++ runtime library linking (`libstdc++`), and name mangling.
+* **[C Programming Keywords Complete Reference](https://onlineccompiler.com/learn/keywords)** — Exhaustive guide to all 32+ ISO C reserved keywords, storage class specifiers (`extern`, `static`, `volatile`), and type qualifiers.
+
+### 🚨 Compiler Error Resolution & Debugging
+* **[Fixing 'undefined reference to main' in C](https://onlineccompiler.com/errors/undefined-reference-in-c)** — Root causes and solutions for linker errors during entry point resolution.
+* **[Resolving 'expected declaration or statement at end of input'](https://onlineccompiler.com/errors/expected-declaration-at-end-of-input)** — Debugging mismatched braces, unclosed preprocessor directives, and syntax boundaries.
+* **[Fixing 'implicit declaration of function' in C](https://onlineccompiler.com/errors/implicit-declaration-in-c)** — Resolving C99/C11 mandatory function prototype declarations and missing standard headers.
+* **[Debugging Segmentation Faults in C](https://onlineccompiler.com/errors/segmentation-fault-in-c)** — Diagnosing SIGSEGV, null pointer dereferences, stack overflows, and memory bounds violations with GDB & Valgrind.
+
+### 🧠 Memory Management & Pointer Architecture
+* **[Array of Pointers in C: Memory Layout & Code Examples](https://onlineccompiler.com/examples/pointers)** — Multi-dimensional pointer indirection, string table arrays, and cache-friendly contiguous allocations.
+* **[calloc vs malloc: Dynamic Heap Allocation](https://onlineccompiler.com/examples/dynamic-memory)** — Performance trade-offs, zero-initialization semantics, virtual memory page allocation, and memory leak prevention.
+
+---
+
+## 🌍 Multilingual Portals & Regional Developer Endpoints
 
 To serve systems engineers, academic institutions, and computer science students globally, the compiler suite provides dedicated native language endpoints:
 
-* ≡ƒç¬≡ƒç╕ **Spanish Portal**: [Compilador C Online en Espa├▒ol](https://onlineccompiler.com/es/) ΓÇö Entorno interactivo de programaci├│n en C con soporte completo de entrada est├índar (`stdin`) y ejecuci├│n en tiempo real.
-* ≡ƒçº≡ƒç╖ **Portuguese Portal**: [Compilador C Online em Portugu├¬s](https://onlineccompiler.com/pt/) ΓÇö IDE C r├ípido e intuitivo para estudantes e desenvolvedores de software embarcado.
-* ≡ƒç⌐≡ƒç¬ **German Portal**: [Online C Compiler auf Deutsch](https://onlineccompiler.com/de/) ΓÇö Schnelle und zuverl├ñssige C-Entwicklungsumgebung mit sofortiger Code-Ausf├╝hrung im Browser.
-* ≡ƒç½≡ƒç╖ **French Portal**: [Compilateur C en Ligne en Fran├ºais](https://onlineccompiler.com/fr/) ΓÇö Ex├⌐cution interactive du code C avec gestion des arguments en ligne de commande et biblioth├¿ques standard.
+* 🇪🇸 **Spanish Portal**: [Compilador C Online en Español](https://onlineccompiler.com/es/) — Entorno interactivo de programación en C con soporte completo de entrada estándar (`stdin`) y ejecución en tiempo real.
+* 🇧🇷 **Portuguese Portal**: [Compilador C Online em Português](https://onlineccompiler.com/pt/) — IDE C rápido e intuitivo para estudantes e desenvolvedores de software embarcado.
+* 🇩🇪 **German Portal**: [Online C Compiler auf Deutsch](https://onlineccompiler.com/de/) — Schnelle und zuverlässige C-Entwicklungsumgebung mit sofortiger Code-Ausführung im Browser.
+* 🇫🇷 **French Portal**: [Compilateur C en Ligne en Français](https://onlineccompiler.com/fr/) — Exécution interactive du code C avec gestion des arguments en ligne de commande et bibliothèques standard.
 
 ---
 
-## ≡ƒÜÇ Key Technical Features
+## 🚀 Key Technical Features
 
 - **Standard Compliance**: Full conformance with ISO/IEC 9899 standards across C89/C90, C99, C11, C17, and the latest C23 specifications.
 - **Interactive Standard Input (`stdin`)**: Real-time bidirectional streaming for terminal input (`scanf`, `fgets`, `getchar`), overcoming the limitations of batch-only cloud runners.
@@ -33,7 +54,7 @@ To serve systems engineers, academic institutions, and computer science students
 
 ---
 
-## ≡ƒÆ╗ Code Demonstration
+## 💻 Code Demonstration
 
 ```c
 #include <stdio.h>
@@ -58,7 +79,7 @@ int main(void) {
 
 ---
 
-## ≡ƒôè Performance Comparison Matrix
+## 📊 Performance Comparison Matrix
 
 | Feature | Local Native Toolchain | Online C Compiler Suite | Traditional Cloud IDE |
 | :--- | :---: | :---: | :---: |
@@ -70,7 +91,7 @@ int main(void) {
 
 ---
 
-## ≡ƒöù Official Links & Resources
+## 🔗 Official Links & Resources
 
 - **Canonical Homepage**: [https://onlineccompiler.com/](https://onlineccompiler.com/)
 - **Product Hunt Listing**: [https://www.producthunt.com/products/online-c-compiler](https://www.producthunt.com/products/online-c-compiler)
@@ -80,6 +101,6 @@ int main(void) {
 
 ---
 
-## ≡ƒôä License
+## 📄 License
 
 This documentation and sample code are released under the [MIT License](LICENSE).
