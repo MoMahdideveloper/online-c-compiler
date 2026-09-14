@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online C Compiler Suite & Systems Engineering Documentation</title>
+  <meta name="description" content="Technical documentation, memory architectures, compiler toolchain benchmarks, and error resolution guides for the Online C Compiler suite (onlineccompiler.com).">
+  <link rel="canonical" href="https://onlineccompiler.com/">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --heading: #58a6ff;
+      --accent: #238636;
+      --accent-hover: #2ea043;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.6;
+      padding: 0 20px 60px;
+    }
+    header {
+      max-width: 1000px;
+      margin: 40px auto 30px;
+      text-align: center;
+      padding: 30px 20px;
+      background: linear-gradient(180deg, rgba(88, 166, 255, 0.08) 0%, rgba(22, 27, 34, 0.6) 100%);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    h1 {
+      color: #ffffff;
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      font-size: 1.15rem;
+      color: #8b949e;
+      margin-bottom: 24px;
+    }
+    .btn-primary {
+      display: inline-block;
+      background-color: var(--accent);
+      color: #ffffff;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section-title {
+      color: var(--heading);
+      font-size: 1.5rem;
+      margin: 40px 0 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      border-color: var(--heading);
+      box-shadow: 0 4px 20px rgba(88, 166, 255, 0.1);
+    }
+    .card h3 {
+      color: #ffffff;
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #8b949e;
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+      flex-grow: 1;
+    }
+    .card a.card-link {
+      color: var(--heading);
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .card a.card-link:hover {
+      text-decoration: underline;
+    }
+    .i18n-bar {
+      margin-top: 50px;
+      padding: 24px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-align: center;
+    }
+    .i18n-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 14px;
+    }
+    .i18n-links a {
+      color: var(--heading);
+      text-decoration: none;
+      background: rgba(88, 166, 255, 0.1);
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: 1px solid rgba(88, 166, 255, 0.2);
+    }
+    .i18n-links a:hover {
+      background: rgba(88, 166, 255, 0.2);
+    }
+    footer {
+      max-width: 1000px;
+      margin: 40px auto 0;
+      text-align: center;
+      color: #8b949e;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⚡ Online C Compiler Documentation Suite</h1>
+    <p class="subtitle">Architectural Guides, Compiler Telemetry, Memory Models & Error Playbooks</p>
+    <a href="https://onlineccompiler.com/" class="btn-primary" target="_blank" rel="noopener">Launch Online C Compiler (Instant &lt; 150ms)</a>
+  </header>
+
+  <div class="container">
+
+    <h2 class="section-title">🛠️ Toolchains, Benchmarks & Language Standards</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Clang vs GCC Comparison</h3>
+        <p>Comprehensive architectural breakdown comparing LLVM/Clang modular frontends with GCC machine optimization pipelines.</p>
+        <a href="https://onlineccompiler.com/learn/clang-vs-gcc" class="card-link" target="_blank" rel="noopener">Read Clang vs GCC Guide &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>GCC vs G++ Differences</h3>
+        <p>Deep analysis of C vs C++ compilation modes, name mangling, and standard library linking semantics.</p>
+        <a href="https://onlineccompiler.com/learn/gcc-vs-gpp" class="card-link" target="_blank" rel="noopener">Read GCC vs G++ Guide &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>ISO C Language Keywords</h3>
+        <p>Complete lexical specification of all reserved identifiers across C89, C99, C11, C17, and C23 standards.</p>
+        <a href="https://onlineccompiler.com/learn/keywords" class="card-link" target="_blank" rel="noopener">Explore Keywords Index &rarr;</a>
+      </div>
+    </div>
+
+    <h2 class="section-title">🚨 Compilation & Linker Error Resolution Playbooks</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Undefined Reference to main</h3>
+        <p>Diagnose and resolve missing entry-point linker failures, typo traps, and library compilation flag misconfigurations.</p>
+        <a href="https://onlineccompiler.com/errors/undefined-reference-in-c" class="card-link" target="_blank" rel="noopener">Fix Undefined Reference &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Expected Declaration at End of Input</h3>
+        <p>Systematic debugging for unbalanced curly braces, unclosed block comments, and unterminated preprocessor conditionals.</p>
+        <a href="https://onlineccompiler.com/errors/expected-declaration-at-end-of-input" class="card-link" target="_blank" rel="noopener">Resolve End of Input Error &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Implicit Declaration of Function</h3>
+        <p>Enforce ISO C prototype compliance, correct missing standard header inclusions, and eliminate compiler warnings.</p>
+        <a href="https://onlineccompiler.com/errors/implicit-declaration-in-c" class="card-link" target="_blank" rel="noopener">Fix Implicit Declaration &rarr;</a>
+      </div>
+    </div>
+
+    <h2 class="section-title">🧠 Memory Architectures, Pointers & Runtime Telemetry</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Array of Pointers in C</h3>
+        <p>Memory layout diagrams, double indirection, and jagged string tables explained with runnable code examples.</p>
+        <a href="https://onlineccompiler.com/examples/pointers" class="card-link" target="_blank" rel="noopener">Understand Array of Pointers &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>calloc vs malloc Safety & Benchmarks</h3>
+        <p>Contract comparisons, integer multiplication overflow defenses, and zero-initialization page fault economics.</p>
+        <a href="https://onlineccompiler.com/examples/dynamic-memory" class="card-link" target="_blank" rel="noopener">Compare calloc vs malloc &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Debugging Segmentation Faults</h3>
+        <p>Root cause analysis for null dereferences, buffer overflows, and AddressSanitizer (-fsanitize=address) telemetry.</p>
+        <a href="https://onlineccompiler.com/errors/segmentation-fault-in-c" class="card-link" target="_blank" rel="noopener">Debug Segmentation Faults &rarr;</a>
+      </div>
+    </div>
+
+    <div class="i18n-bar">
+      <h3>🌐 International Developer Portals</h3>
+      <p style="color: #8b949e; margin-top: 6px;">Localized in-browser compilation environments across global languages:</p>
+      <div class="i18n-links">
+        <a href="https://onlineccompiler.com/" target="_blank" rel="noopener">English (Global)</a>
+        <a href="https://onlineccompiler.com/es/" target="_blank" rel="noopener">Espa&ntilde;ol (Compilador C)</a>
+        <a href="https://onlineccompiler.com/pt/" target="_blank" rel="noopener">Portugu&ecirc;s (Compilador C)</a>
+        <a href="https://onlineccompiler.com/de/" target="_blank" rel="noopener">Deutsch (Online Compiler)</a>
+        <a href="https://onlineccompiler.com/fr/" target="_blank" rel="noopener">Fran&ccedil;ais (Compilateur C)</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Published by Systems Engineering &middot; Canonical Cloud Suite: <a href="https://onlineccompiler.com/" style="color: var(--heading);">onlineccompiler.com</a></p>
+  </footer>
+
+</body>
+</html>
