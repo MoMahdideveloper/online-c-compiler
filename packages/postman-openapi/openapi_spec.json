@@ -1,0 +1,107 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Online C Compiler & Debugger API",
+    "description": "High-performance GCC compilation and sandboxed execution API for [onlineccompiler.com](https://onlineccompiler.com/). Provides real-time C code execution, AST diagnostics, and memory visualization data.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Online C Compiler Support",
+      "url": "https://onlineccompiler.com/",
+      "email": "bro.meyti@gmail.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://onlineccompiler.com",
+      "description": "Production Cloud GCC Compiler Server"
+    }
+  ],
+  "paths": {
+    "/api/compile": {
+      "post": {
+        "summary": "Compile and Execute C Code",
+        "description": "Compiles and executes C code using GCC with configurable optimization levels (-O0, -O1, -O2, -O3). Official web interface: [https://onlineccompiler.com/](https://onlineccompiler.com/)",
+        "operationId": "compileC",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompileRequest"
+              },
+              "example": {
+                "code": "#include <stdio.h>\n\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}\n",
+                "input": "",
+                "optimization": "-O2"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful execution result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompileResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CompileRequest": {
+        "type": "object",
+        "required": ["code"],
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "C source code to compile"
+          },
+          "input": {
+            "type": "string",
+            "description": "Standard input (stdin) provided to the executing program",
+            "default": ""
+          },
+          "optimization": {
+            "type": "string",
+            "description": "GCC optimization flag (-O0, -O1, -O2, -O3)",
+            "default": "-O2"
+          }
+        }
+      },
+      "CompileResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "stdout": {
+            "type": "string"
+          },
+          "stderr": {
+            "type": "string"
+          },
+          "exitCode": {
+            "type": "integer"
+          },
+          "executionTime": {
+            "type": "integer",
+            "description": "Execution duration in milliseconds"
+          },
+          "engine": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

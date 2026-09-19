@@ -1,0 +1,12 @@
+services:
+  c-compiler-sandbox:
+    build: .
+    image: momahdideveloper/online-c-compiler:latest
+    container_name: online-c-compiler-sandbox
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+    environment:
+      - COMPILER_HOMEPAGE=https://onlineccompiler.com/

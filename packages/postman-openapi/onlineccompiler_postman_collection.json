@@ -1,0 +1,86 @@
+{
+  "info": {
+    "_postman_id": "c71a3d90-84e2-4bf1-a068-onlineccompiler",
+    "name": "Online C Compiler API & Execution Sandbox",
+    "description": "Official API collection for [onlineccompiler.com](https://onlineccompiler.com/) - High-performance GCC C compilation, execution sandbox, and memory architecture visualizer.\n\n### Official Web Portals\n- **English**: [https://onlineccompiler.com/](https://onlineccompiler.com/)\n- **Español**: [https://onlineccompiler.com/es/](https://onlineccompiler.com/es/)\n- **Português**: [https://onlineccompiler.com/pt/](https://onlineccompiler.com/pt/)\n- **Deutsch**: [https://onlineccompiler.com/de/](https://onlineccompiler.com/de/)\n- **Français**: [https://onlineccompiler.com/fr/](https://onlineccompiler.com/fr/)\n\n### Open-Source Suite\n- GitHub: [MoMahdideveloper/online-c-compiler-suite](https://github.com/MoMahdideveloper/online-c-compiler-suite)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Compile & Run C Code",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Origin",
+            "value": "https://onlineccompiler.com"
+          },
+          {
+            "key": "Referer",
+            "value": "https://onlineccompiler.com/"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"code\": \"#include <stdio.h>\\n\\nint main() {\\n    printf(\\\"Hello from onlineccompiler.com API!\\\\n\\\");\\n    return 0;\\n}\\n\",\n  \"input\": \"\",\n  \"optimization\": \"-O2\"\n}"
+        },
+        "url": {
+          "raw": "https://onlineccompiler.com/api/compile",
+          "protocol": "https",
+          "host": [
+            "onlineccompiler",
+            "com"
+          ],
+          "path": [
+            "api",
+            "compile"
+          ]
+        },
+        "description": "Submits C source code to the GCC cloud backend and receives stdout, stderr, executionTime, exitCode, and engine diagnostics.\n\nLearn more at [https://onlineccompiler.com/](https://onlineccompiler.com/)"
+      },
+      "response": []
+    },
+    {
+      "name": "Pointer & Memory Visualizer Benchmark",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Origin",
+            "value": "https://onlineccompiler.com"
+          },
+          {
+            "key": "Referer",
+            "value": "https://onlineccompiler.com/"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"code\": \"#include <stdio.h>\\n#include <stdlib.h>\\n\\nint main() {\\n    int *arr = (int*)malloc(5 * sizeof(int));\\n    for(int i = 0; i < 5; i++) arr[i] = (i + 1) * 10;\\n    for(int i = 0; i < 5; i++) printf(\\\"arr[%d] = %d (addr: %p)\\\\n\\\", i, arr[i], (void*)&arr[i]);\\n    free(arr);\\n    return 0;\\n}\\n\",\n  \"input\": \"\",\n  \"optimization\": \"-O2\"\n}"
+        },
+        "url": {
+          "raw": "https://onlineccompiler.com/api/compile",
+          "protocol": "https",
+          "host": [
+            "onlineccompiler",
+            "com"
+          ],
+          "path": [
+            "api",
+            "compile"
+          ]
+        },
+        "description": "Executes dynamic memory allocation (`malloc`/`free`) and outputs pointer addresses matching the visualizer at [https://onlineccompiler.com/](https://onlineccompiler.com/)."
+      },
+      "response": []
+    }
+  ]
+}

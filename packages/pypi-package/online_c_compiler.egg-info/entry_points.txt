@@ -1,0 +1,3 @@
+[console_scripts]
+occ-py = online_c_compiler.cli:main
+online-c-compiler = online_c_compiler.cli:main

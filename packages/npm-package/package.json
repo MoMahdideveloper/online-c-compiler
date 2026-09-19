@@ -1,0 +1,46 @@
+{
+  "name": "online-c-compiler",
+  "version": "1.0.0",
+  "description": "Official CLI and Node.js SDK for onlineccompiler.com - Fast in-browser GCC C compiler, debugger, and memory visualization suite.",
+  "main": "index.js",
+  "bin": {
+    "online-c-compiler": "./bin/cli.js",
+    "occ": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node ./bin/cli.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "c",
+    "compiler",
+    "online-compiler",
+    "gcc",
+    "clang",
+    "c-programming",
+    "c11",
+    "c17",
+    "c23",
+    "online-c-compiler",
+    "memory-visualizer",
+    "code-runner",
+    "cli"
+  ],
+  "author": "Mahdi Hatefi <bro.meyti@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://onlineccompiler.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MoMahdideveloper/online-c-compiler-suite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MoMahdideveloper/online-c-compiler-suite/issues"
+  },
+  "funding": {
+    "type": "website",
+    "url": "https://onlineccompiler.com/"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

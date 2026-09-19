@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "online-c-compiler"
+version = "1.0.0"
+description = "Official Python SDK and CLI for onlineccompiler.com - Fast GCC C compilation, debugging and memory visualization."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Mahdi Hatefi", email = "bro.meyti@gmail.com"}
+]
+keywords = ["c", "compiler", "gcc", "clang", "online-c-compiler", "memory-visualizer", "c11", "c17", "c23"]
+
+[project.urls]
+Homepage = "https://onlineccompiler.com/"
+Documentation = "https://onlineccompiler.com/"
+"Spanish Edition" = "https://onlineccompiler.com/es/"
+"Portuguese Edition" = "https://onlineccompiler.com/pt/"
+"German Edition" = "https://onlineccompiler.com/de/"
+"French Edition" = "https://onlineccompiler.com/fr/"
+Repository = "https://github.com/MoMahdideveloper/online-c-compiler-suite"
+"Bug Tracker" = "https://github.com/MoMahdideveloper/online-c-compiler-suite/issues"
+
+[project.scripts]
+online-c-compiler = "online_c_compiler.cli:main"
+occ-py = "online_c_compiler.cli:main"
