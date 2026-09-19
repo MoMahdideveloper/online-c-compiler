@@ -12,6 +12,20 @@ An enterprise-grade, high-performance web-based C compilation and debugging envi
 
 ---
 
+## 📦 Official Developer Ecosystem & Tooling
+
+Integrate and automate with [onlineccompiler.com](https://onlineccompiler.com/) across any environment:
+
+| Ecosystem | Package / Resource | Link & Badges | Purpose |
+|---|---|---|---|
+| **npm** | online-c-compiler | [npm Package](https://www.npmjs.com/package/online-c-compiler) · 
+px online-c-compiler | Node.js CLI & SDK to compile C code from terminal or apps. |
+| **PyPI** | online-c-compiler | [PyPI Project](https://pypi.org/project/online-c-compiler/) · pip install online-c-compiler | Python client library & CLI runner with zero local GCC requirements. |
+| **Docker** | online-c-compiler | [Docker Sandbox](packages/docker-container/) · Alpine + GCC 14 + Clang 19 | Pre-built container sandbox matching the cloud execution backend. |
+| **Postman / OpenAPI** | API Collection | [Postman Collection](packages/postman-openapi/) · OpenAPI 3.0 | Ready-to-import API specs for SwaggerHub, RapidAPI & Postman. |
+
+---
+
 ## 📖 Systems Programming Guides & Troubleshooting Reference
 
 Comprehensive technical documentation, compiler diagnostic fixes, and memory management tutorials:
